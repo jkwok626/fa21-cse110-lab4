@@ -1,0 +1,2 @@
+1) num1 and num2 are strings instead of numbers, so when we do "1" + "2", for example, we're actually concatenating two strings instead of summing two numbers. This gives us a result of "12" when we're looking a result of 3.
+2) I would add a parseInt() call to the initialization of num1 and num2 to make sure that they become integers. This way, when they're added in calculateSum, result will also be an integer.
